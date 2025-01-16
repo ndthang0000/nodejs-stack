@@ -1,7 +1,9 @@
-console.log('Server was restarted!');
+console.log('Server was restarted!')
 //-------------------------DEMO: Decorator-------------------------
-import Singleton from './decorators/singleton-decorators';
-import './data-types/index';
+// import Singleton from './decorators/singleton-decorators';
+// import './data-types/index';
+// import './sanitized-html';
+
 // @Singleton
 // class User {
 //   constructor(private name: string) { }
@@ -20,4 +22,3 @@ import './data-types/index';
 // mjID.getID(); // 999
 // mjID.setID(567); // Thay đổi biến của hàm ngoài
 // mjID.getID(); // 567: Tả về biến celebrityID đã được cập nhật.
-
