@@ -3,7 +3,7 @@ console.log('Server was restarted!')
 // import Singleton from './decorators/singleton-decorators';
 // import './data-types/index';
 // import './sanitized-html';
-
+import './stream-file';
 // @Singleton
 // class User {
 //   constructor(private name: string) { }
