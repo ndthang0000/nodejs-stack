@@ -25,3 +25,5 @@ console.log('Server was restarted!')
 // mjID.getID(); // 999
 // mjID.setID(567); // Thay đổi biến của hàm ngoài
 // mjID.getID(); // 567: Tả về biến celebrityID đã được cập nhật.
+
+import './graphql/server'
