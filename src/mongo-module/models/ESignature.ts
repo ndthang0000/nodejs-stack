@@ -3,7 +3,7 @@ import mongoose, { Schema, Document } from 'mongoose'
 export interface IESignature extends Document {
   privateKey: string
   publicKey: string
-  keyid: number
+  kid: string
   createdAt: Date
   updatedAt: Date
 }
@@ -12,7 +12,7 @@ const ESignatureSchema: Schema = new Schema(
   {
     publicKey: { type: String, required: true },
     privateKey: { type: String, required: true, unique: true },
-    keyid: { type: Number },
+    kid: { type: String },
   },
   {
     timestamps: true
