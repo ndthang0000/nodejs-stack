@@ -1,5 +1,6 @@
 console.log('Server was restarted!')
-
+import connectDB from './mongo-module/db';
+connectDB();
 // import './mutex/mutex';
 //-------------------------DEMO: Decorator-------------------------
 // import Singleton from './decorators/singleton-decorators';
@@ -26,4 +27,8 @@ console.log('Server was restarted!')
 // mjID.setID(567); // Thay đổi biến của hàm ngoài
 // mjID.getID(); // 567: Tả về biến celebrityID đã được cập nhật.
 
-import './graphql/server'
+// -------------------------DEMO GRAPHQL-------------------------
+// import './graphql/server'
+
+// -------------------------DEMO E-SIGNATURE-------------------------
+import './e-signature'

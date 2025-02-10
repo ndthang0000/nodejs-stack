@@ -24,6 +24,7 @@
         "@types/jsonwebtoken": "^9.0.8",
         "@types/mongoose": "^5.11.97",
         "@types/node": "^22.13.1",
+        "@types/node-rsa": "^1.1.4",
         "@types/sanitize-html": "^2.13.0",
         "@types/ws": "^8.5.14",
         "eslint": "^9.18.0",
@@ -53,6 +54,7 @@
         "graphql-ws": "^6.0.3",
         "jsonwebtoken": "^9.0.2",
         "mongoose": "^8.10.0",
+        "node-rsa": "^1.1.1",
         "sanitize-html": "^2.14.0",
         "ws": "^8.18.0"
     }
