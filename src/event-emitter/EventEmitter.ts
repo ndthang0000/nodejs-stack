@@ -1,21 +1,21 @@
 class EventEmitter {
-  events: { [key: string]: Function[] } = {}
-  on(event: string, cb: Function) {
-    if (!this.events[event]) {
-      this.events[event] = []
+    events: { [key: string]: Function[] } = {}
+    on(event: string, cb: Function) {
+        if (!this.events[event]) {
+            this.events[event] = []
+        }
+        this.events[event].push(cb)
     }
-    this.events[event].push(cb)
-  }
-  emit(event: string, ...args: any[]) {
-    if (this.events[event]) {
-      this.events[event].forEach((cb) => cb(...args))
+    emit(event: string, ...args: any[]) {
+        if (this.events[event]) {
+            this.events[event].forEach((cb) => cb(...args))
+        }
     }
-  }
-  off(event: string, cb: Function) {
-    if (this.events[event]) {
-      this.events[event] = this.events[event].filter((fn) => fn !== cb)
+    off(event: string, cb: Function) {
+        if (this.events[event]) {
+            this.events[event] = this.events[event].filter((fn) => fn !== cb)
+        }
     }
-  }
 }
 // Example Usage
 const emitter = new EventEmitter()

@@ -1,17 +1,17 @@
 function Singleton<T extends new (...args: any[]) => any>(ctr: T): T {
-  let instance: T
+    let instance: T
 
-  return class {
-    constructor(...args: any[]) {
-      if (instance) {
-        console.error('You cannot instantiate a singleton twice!')
-        return instance
-      }
+    return class {
+        constructor(...args: any[]) {
+            if (instance) {
+                console.error('You cannot instantiate a singleton twice!')
+                return instance
+            }
 
-      instance = new ctr(...args)
-      return instance
-    }
-  } as T
+            instance = new ctr(...args)
+            return instance
+        }
+    } as T
 }
 
 export default Singleton
