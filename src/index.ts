@@ -1,5 +1,10 @@
 console.log('Server was restarted!')
 import connectDB from './mongo-module/db';
+import { redisClient } from './redis/redis';
+
+redisClient.on('connect', () => {
+  console.log('Redis connected!');
+});
 connectDB();
 // import './mutex/mutex';
 //-------------------------DEMO: Decorator-------------------------
@@ -32,3 +37,4 @@ connectDB();
 
 // -------------------------DEMO E-SIGNATURE-------------------------
 // import './e-signature'
+// import './bullMQ';
